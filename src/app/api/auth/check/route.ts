@@ -1,5 +1,3 @@
-export const runtime = 'nodejs'; // ✅ Required to allow Mongoose
-
 import { auth } from "@/auth";
 import connectDB from "@/db/connectDB";
 import { User } from "@/db/models/user.model";
