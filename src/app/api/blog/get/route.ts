@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import connectDB from "@/db/connectDB"
 import { Blog } from "@/db/models/blog.model";
-import { User } from "@/db/models/user.model";
+import "@/db/models/user.model";
+
 export const GET = async () => {
   await connectDB();
 
