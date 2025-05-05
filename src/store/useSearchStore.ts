@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { IBlog } from "../types";
+import { IBlog } from "../types/blog";
 
 interface SearchStore {
   searchQuery: string;

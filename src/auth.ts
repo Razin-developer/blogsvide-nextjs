@@ -1,3 +1,7 @@
+// At the top of your file, e.g. `src/auth.ts`
+export const runtime = "nodejs"; // Force use of Node.js runtime
+
+
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";

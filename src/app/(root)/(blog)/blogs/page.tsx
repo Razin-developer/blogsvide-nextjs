@@ -143,7 +143,7 @@ const AllBlogsPage = () => {
           {error ? <p className="text-red-500">{error}</p> :
             searchResults.length > 0 ? (
               searchResults.map((blog) => (
-                <BlogCard key={blog._id} {...blog} user={typeof blog.user === "string" ? blog.user : blog.user._id} />
+                <BlogCard key={blog._id.toString()} _id={blog._id.toString()} title={blog.title} shortDescription={blog.shortDescription} image={blog.image} user={typeof blog.user === "string" ? blog.user : blog.user._id.toString()} />
               ))
             ) : (
               <p className="text-gray-500"></p>
