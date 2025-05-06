@@ -88,7 +88,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ],
 
   pages: {
-    signIn: "/auth/login",
+    signIn: "/login",
   },
 
   callbacks: {
@@ -107,4 +107,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return session;
     },
   },
+
+  trustHost: true,
 });

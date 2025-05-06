@@ -30,8 +30,8 @@ const LoginPage = () => {
       const res = await login(data);
 
       if (res?.ok) {
-        const res = await checkAuth();
-        if (res?.ok) {
+        const checkAuthRes = await checkAuth();
+        if (checkAuthRes?.ok) {
           toast.success("Logged in successfully");
         } else {
           toast.error("Login Failed");
