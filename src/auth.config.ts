@@ -10,4 +10,6 @@ export const { auth } = NextAuth({
     }),
   ],
   session: { strategy: "jwt" },
+
+  trustHost: true,
 });
